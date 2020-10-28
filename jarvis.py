@@ -28,7 +28,7 @@ def wishMe():
     else:
         speak("Good Evening!")  
 
-    speak("I am Jarvis Sir. Please tell me how may I help you")       
+    speak("I am Jarvis. Please allow me to help you")       
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -82,7 +82,15 @@ if __name__ == "__main__":
         elif 'open stackoverflow' in query:
             webbrowser.open("stackoverflow.com")   
 
-
+        elif 'how are you jarvis?' in query:
+            speak("Hi! I am fine! It's a wonderful day with you!")
+            
+        elif "where is" in query:
+            data = data.split(" ")
+            location = data[2]
+            speak("Hold on Master, I will show you where " + location + " is.")
+            os.system("chromium-browser https://www.google.nl/maps/place/" + location + "/&amp;")
+            
         elif 'play music' in query:
             music_dir = 'D:\\Non Critical\\songs\\Favorite Songs2'
             songs = os.listdir(music_dir)

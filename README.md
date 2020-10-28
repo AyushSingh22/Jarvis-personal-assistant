@@ -1,2 +1,2 @@
-# Jarvis-personal-assistant
-Virtual AI personal assistant 
+# J.A.R.V.I.S --- personal-assistant
+The Virtual AI personal assistant 
