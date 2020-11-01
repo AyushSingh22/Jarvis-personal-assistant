@@ -54,8 +54,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('youremail@gmail.com', 'your-password')
-    server.sendmail('youremail@gmail.com', to, content)
+    server.login('ayushsraj22102001@gmail.com', 'MaaShardey@22')
+    server.sendmail('ayushbijaysingh@gmail.com', to, content)
     server.close()
 
 if __name__ == "__main__":
@@ -105,11 +105,11 @@ if __name__ == "__main__":
             codePath = "https://github.com/AyushSingh22/Jarvis-personal-assistant/edit/master/jarvis.py"
             os.startfile(codePath)
 
-        elif 'email to harry' in query:
+        elif 'email to Ayush' in query:
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "harryyourEmail@gmail.com"    
+                to = "ayushbijaysingh@gmail.com"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             except Exception as e:
