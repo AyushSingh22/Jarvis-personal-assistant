@@ -102,7 +102,7 @@ if __name__ == "__main__":
             speak(f"Sir, the time is {strTime}")
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "https://github.com/AyushSingh22/Jarvis-personal-assistant/edit/master/jarvis.py"
             os.startfile(codePath)
 
         elif 'email to harry' in query:
@@ -114,4 +114,4 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend harry bhai. I am not able to send this email")    
+                speak("Sorry my friend AYUSH bhai. I am not able to send this email")    
